@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>J.A.R.V.I.S</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<canvas id="holo-bg"></canvas>
+<div class="hud">
+    <h1 class="title">J.A.R.V.I.S</h1>
+    <div id="chat-box"></div>
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type or speak a command...">
+        <button id="send-btn">Send</button>
+        <button id="voice-btn">🎤</button>
+    </div>
+    <div class="shortcut-buttons">
+        <button onclick="sendShortcut('open notepad')">Open Notepad</button>
+        <button onclick="sendShortcut('open chrome')">Open Chrome</button>
+        <button onclick="sendShortcut('screenshot')">Screenshot</button>
+        <button onclick="sendShortcut('shutdown')">Shutdown PC</button>
+        <button onclick="sendShortcut('lock pc')">Lock PC</button>
+    </div>
+</div>
+<script src="/static/jarvis.js"></script>
+</body>
+</html>
